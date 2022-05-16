@@ -2,7 +2,7 @@
 import requests, json
 
 # Enter your API key here
-api_key = ''
+api_key = 'Enter your API key'
  
 # store weather url in variable called weather_data
 weather_data = "http://api.openweathermap.org/data/2.5/weather?"
@@ -12,8 +12,7 @@ my_input = input("Enter city name : ")
  
 weather_url = weather_data + "appid=" + api_key + "&q=" + my_input
  
-# get method of requests module
-# return response object
+# Get requests module and return response object
 response = requests.get(weather_url)
  
 # convert json format data into python format data
